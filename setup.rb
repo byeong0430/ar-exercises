@@ -1,4 +1,5 @@
 require 'pry' # in case you want to use binding.pry
+require 'pg' # add pg
 require 'active_record'
 require_relative 'lib/store'
 require_relative 'lib/employee'
