@@ -7,10 +7,6 @@ puts 'Exercise 4'
 puts '----------'
 
 # Your code goes here ...
-# create Store class and inherit Base method from ActiveRecord
-class Store < ActiveRecord::Base
-end
-
 # create 3 store options
 surrey_option = { name: 'Surrey', annual_revenue: 224_000, mens_apparel: false, womens_apparel: true }
 whistler_option = { name: 'Whistler', annual_revenue: 1_900_000, mens_apparel: true, womens_apparel: false }

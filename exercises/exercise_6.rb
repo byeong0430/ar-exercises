@@ -9,17 +9,6 @@ puts 'Exercise 6'
 puts '----------'
 
 # Your code goes here ...
-# a Store `has_many` employees.
-# create Store class and inherit Base method from ActiveRecords
-class Store < ActiveRecord::Base
-  has_many :employees
-end
-# an Employee `belongs_to` a Store.
-# create Store class and inherit Base method from ActiveRecords
-class Employee < ActiveRecord::Base
-  belongs_to :store
-end
-
 # create a record of employee for a store
 new_employee1 = { first_name: 'Byeong', last_name: 'Kim', hourly_rate: 60 }
 new_employee2 = { first_name: 'Skye', last_name: 'Lowry', hourly_rate: 50 }

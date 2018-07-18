@@ -4,10 +4,6 @@ puts 'Exercise 1'
 puts '----------'
 
 # Your code goes below here ...
-# create a class called 'Store' and inherit (<) Base method from ActiveRecord
-class Store < ActiveRecord::Base
-end
-
 # create option array of hashes
 burnaby_options = { name: 'Bunaby', annual_revenue: 300_000, mens_apparel: true, womens_apparel: true }
 richmond_options = { name: 'Richmond', annual_revenue: 1_260_000, mens_apparel: false, womens_apparel: true }

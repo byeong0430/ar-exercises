@@ -8,9 +8,6 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
-class Store < ActiveRecord::Base
-end
-
 # calculate the sum of annual_revenue
 @total_revenue = Store.sum('annual_revenue')
 pp @total_revenue
