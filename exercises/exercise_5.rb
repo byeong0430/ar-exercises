@@ -8,3 +8,13 @@ puts "Exercise 5"
 puts "----------"
 
 # Your code goes here ...
+class Store < ActiveRecord::Base
+end
+
+# calculate the sum of annual_revenue
+@total_revenue = Store.sum('annual_revenue')
+pp @total_revenue
+
+@avg_revenue = Store.average('annual_revenue')
+# convert big decimal to float
+pp @avg_revenue.to_f
