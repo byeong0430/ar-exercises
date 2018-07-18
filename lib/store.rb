@@ -14,6 +14,6 @@ class Store < ActiveRecord::Base
   # error when men_apparel and womens_apparel are both false
   if !self[:mens_apparel] && !self[:womens_apparel]
     errors.add(:mens_apparel,'a store must carry at least one of the apparel types (men or women)')
-    errors.add(:womens_apparel, 'a store must carry at least one of the apparel types (men or women)'rel_both_false_error)
+    errors.add(:womens_apparel, 'a store must carry at least one of the apparel types (men or women)')
   end
 end
