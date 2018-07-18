@@ -32,7 +32,7 @@ store_name = gets.chomp
 # @new_store.save
 
 # 2nd way to insert value to table: use create() to Store class
-@new_store = Store.create(name: store_name)
+@new_store = Store.create(name: store_name, annual_revenue: 100_000)
 
 # # print out any error messages
 error.show_error @new_store

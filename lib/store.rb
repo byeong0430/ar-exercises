@@ -12,7 +12,7 @@ class Store < ActiveRecord::Base
   }
   # custom validation
   # error when men_apparel and womens_apparel are both false
-  if !self[:mens_apparel] && !self[:womens_apparel]
+  if !:mens_apparel && !:womens_apparel
     errors.add(:mens_apparel,'a store must carry at least one of the apparel types (men or women)')
     errors.add(:womens_apparel, 'a store must carry at least one of the apparel types (men or women)')
   end
